@@ -48,17 +48,18 @@
 	            ],
 	    position:[0, 0, 0], 
 	    transitionEnd:function(indexArr, data){
-	        if(data[1]!="现在"){
-	    		mobileSelect3.updateWheel(2, tempMinute);
-	        }else{
-	        	mobileSelect3.updateWheel(2, minuteArr);
-	        }
-	        if(data[0]!="今天"){
-	        	mobileSelect3.updateWheel(1, tempHours);
+	       if(data[0]=="今天"){
+	    		mobileSelect3.updateWheel(1, hourArr);
+	    		mobileSelect3.updateWheel(2, minuteArr);
+	    		if(data[1]!="现在"){
+		    		mobileSelect3.updateWheel(2, tempMinute);
+		        }else{
+		        	mobileSelect3.updateWheel(2, minuteArr);
+		        }
+	    	}else{
+	    		mobileSelect3.updateWheel(1, tempHours);
 	        	mobileSelect3.updateWheel(2, tempMinute);
-	        }else{
-	        	mobileSelect3.updateWheel(1, hourArr);
-	        }
+	    	}
 	    },
 	    callback:function(indexArr, data){
 	        console.log(data);
