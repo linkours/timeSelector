@@ -164,7 +164,7 @@
 		    this.mobileSelect.classList.add('mobileSelect-show');	
 		},
 		hide:function(){
-			_this.mobileSelect.classList.remove('mobileSelect-show');
+			this.mobileSelect.classList.remove('mobileSelect-show');
 		},
 
 		renderWheels: function(wheelsData, cancelBtnText, ensureBtnText){
