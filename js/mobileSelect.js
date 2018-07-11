@@ -163,6 +163,9 @@
 		show: function(){
 		    this.mobileSelect.classList.add('mobileSelect-show');	
 		},
+		hide:function(){
+			_this.mobileSelect.classList.remove('mobileSelect-show');
+		},
 
 		renderWheels: function(wheelsData, cancelBtnText, ensureBtnText){
 			var _this = this;
