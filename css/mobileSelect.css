@@ -36,7 +36,7 @@
   background: white;
 }
 .mobileSelect .content .fixWidth {
-  width: 90%;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -50,25 +50,27 @@
 .mobileSelect .content .btnBar {
   border-bottom: 1px solid #DCDCDC;
   font-size: 15px;
-  height: 45px;
+  /*height: 45px;*/
   position: relative;
   text-align: center;
-  line-height: 45px;
+  /*line-height: 45px;*/
 }
 .mobileSelect .content .btnBar .cancel,
 .mobileSelect .content .btnBar .ensure {
-  height: 45px;
+  /*height: 45px;*/
   width: 55px;
   cursor: pointer;
-  position: absolute;
-  top: 0;
+  /*position: absolute;*/
+  vertical-align: middle;
+  margin-top: 10px;
+  /*top: 0;*/
 }
 .mobileSelect .content .btnBar .cancel {
-  left: 0;
+  float: left;
   color: #666;
 }
 .mobileSelect .content .btnBar .ensure {
-  right: 0;
+  float: right;
   color: #1e83d3;
 }
 .mobileSelect .content .btnBar .title {

@@ -163,6 +163,9 @@
 		show: function(){
 		    this.mobileSelect.classList.add('mobileSelect-show');	
 		},
+		hide:function(){
+			this.mobileSelect.classList.remove('mobileSelect-show');
+		},
 
 		renderWheels: function(wheelsData, cancelBtnText, ensureBtnText){
 			var _this = this;
@@ -176,8 +179,8 @@
 		            '<div class="btnBar">'+
 		                '<div class="fixWidth">'+
 		                    '<div class="cancel">'+ cancelText +'</div>'+
-		                    '<div class="title"></div>'+
 		                    '<div class="ensure">'+ ensureText +'</div>'+
+		                    '<div class="title"></div>'+
 		                '</div>'+
 		            '</div>'+
 		            '<div class="panel">'+
